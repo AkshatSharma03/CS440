@@ -1,0 +1,186 @@
+BFSMazeAgent.java:4: error: package edu.bu.labs.routing does not exist
+import edu.bu.labs.routing.Coordinate;
+                          ^
+BFSMazeAgent.java:5: error: package edu.bu.labs.routing does not exist
+import edu.bu.labs.routing.Direction;
+                          ^
+BFSMazeAgent.java:6: error: package edu.bu.labs.routing does not exist
+import edu.bu.labs.routing.Path;
+                          ^
+BFSMazeAgent.java:7: error: package edu.bu.labs.routing.State does not exist
+import edu.bu.labs.routing.State.StateView;
+                                ^
+BFSMazeAgent.java:8: error: package edu.bu.labs.routing does not exist
+import edu.bu.labs.routing.Tile;
+                          ^
+BFSMazeAgent.java:9: error: package edu.bu.labs.routing.agents does not exist
+import edu.bu.labs.routing.agents.MazeAgent;
+                                 ^
+BFSMazeAgent.java:17: error: cannot find symbol
+public class BFSMazeAgent extends MazeAgent {
+                                  ^
+  symbol: class MazeAgent
+BFSMazeAgent.java:24: error: cannot find symbol
+  public void initializeFromState(final StateView stateView) {
+                                        ^
+  symbol:   class StateView
+  location: class BFSMazeAgent
+BFSMazeAgent.java:41: error: cannot find symbol
+  public boolean shouldReplacePlan(final StateView stateView) {
+                                         ^
+  symbol:   class StateView
+  location: class BFSMazeAgent
+BFSMazeAgent.java:47: error: cannot find symbol
+      final Coordinate src, final Coordinate goal, final StateView stateView) {
+            ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:47: error: cannot find symbol
+      final Coordinate src, final Coordinate goal, final StateView stateView) {
+                                  ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:47: error: cannot find symbol
+      final Coordinate src, final Coordinate goal, final StateView stateView) {
+                                                         ^
+  symbol:   class StateView
+  location: class BFSMazeAgent
+BFSMazeAgent.java:46: error: cannot find symbol
+  public Path<Coordinate> search(
+         ^
+  symbol:   class Path
+  location: class BFSMazeAgent
+BFSMazeAgent.java:46: error: cannot find symbol
+  public Path<Coordinate> search(
+              ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:23: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+BFSMazeAgent.java:26: error: cannot find symbol
+    Coordinate finishCoord = null;
+    ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:29: error: cannot find symbol
+        if (stateView.getTileState(new Coordinate(rowIdx, colIdx)) == Tile.State.FINISH) {
+                                       ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:29: error: package Tile does not exist
+        if (stateView.getTileState(new Coordinate(rowIdx, colIdx)) == Tile.State.FINISH) {
+                                                                          ^
+BFSMazeAgent.java:30: error: cannot find symbol
+          finishCoord = new Coordinate(rowIdx, colIdx);
+                            ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:37: error: cannot find symbol
+    super.initializeFromState(stateView);
+    ^
+  symbol:   variable super
+  location: class BFSMazeAgent
+BFSMazeAgent.java:40: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+BFSMazeAgent.java:45: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+BFSMazeAgent.java:49: error: cannot find symbol
+    Queue<Path<Coordinate>> frontier = new LinkedList<>();
+          ^
+  symbol:   class Path
+  location: class BFSMazeAgent
+BFSMazeAgent.java:49: error: cannot find symbol
+    Queue<Path<Coordinate>> frontier = new LinkedList<>();
+               ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:50: error: cannot find symbol
+    Set<Coordinate> visited = new HashSet<>();
+        ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:53: error: cannot find symbol
+    Path<Coordinate> startPath = new Path<>(src);
+    ^
+  symbol:   class Path
+  location: class BFSMazeAgent
+BFSMazeAgent.java:53: error: cannot find symbol
+    Path<Coordinate> startPath = new Path<>(src);
+         ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:53: error: cannot find symbol
+    Path<Coordinate> startPath = new Path<>(src);
+                                     ^
+  symbol:   class Path
+  location: class BFSMazeAgent
+BFSMazeAgent.java:58: error: cannot find symbol
+      Path<Coordinate> currentPath = frontier.poll();
+      ^
+  symbol:   class Path
+  location: class BFSMazeAgent
+BFSMazeAgent.java:58: error: cannot find symbol
+      Path<Coordinate> currentPath = frontier.poll();
+           ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:59: error: cannot find symbol
+      Coordinate currentCoord = currentPath.current();
+      ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:67: error: cannot find symbol
+      for (Direction dir : Direction.getCardinalDirections()) {
+                           ^
+  symbol:   variable Direction
+  location: class BFSMazeAgent
+BFSMazeAgent.java:67: error: cannot find symbol
+      for (Direction dir : Direction.getCardinalDirections()) {
+           ^
+  symbol:   class Direction
+  location: class BFSMazeAgent
+BFSMazeAgent.java:70: error: cannot find symbol
+        int newRow = currentCoord.getRow() + getDy();
+                                             ^
+  symbol:   method getDy()
+  location: class BFSMazeAgent
+BFSMazeAgent.java:71: error: cannot find symbol
+        int newCol = currentCoord.getCol() + getDx();
+                                             ^
+  symbol:   method getDx()
+  location: class BFSMazeAgent
+BFSMazeAgent.java:72: error: cannot find symbol
+        Coordinate neighbor = new Coordinate(newRow, newCol);
+        ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:72: error: cannot find symbol
+        Coordinate neighbor = new Coordinate(newRow, newCol);
+                                  ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:88: error: package Tile does not exist
+        Tile.State tileState = stateView.getTileState(neighbor);
+            ^
+BFSMazeAgent.java:89: error: package Tile does not exist
+        if (tileState == Tile.State.WALL) {
+                             ^
+BFSMazeAgent.java:94: error: cannot find symbol
+        Path<Coordinate> newPath =
+        ^
+  symbol:   class Path
+  location: class BFSMazeAgent
+BFSMazeAgent.java:94: error: cannot find symbol
+        Path<Coordinate> newPath =
+             ^
+  symbol:   class Coordinate
+  location: class BFSMazeAgent
+BFSMazeAgent.java:95: error: cannot find symbol
+            new Path<>(
+                ^
+  symbol:   class Path
+  location: class BFSMazeAgent
+42 errors
